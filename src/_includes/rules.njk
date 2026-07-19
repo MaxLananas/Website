@@ -8,6 +8,11 @@
 </ul>
 {% endmacro %}
 
+{% macro sectionTitle(icon, key) %}
+<img class="rules-heading-icon" src="{{ icon }}" alt="">
+<span>{{ key | i18n }}</span>
+{% endmacro %}
+
 {% block pageStyles %}
   <link rel="stylesheet" href="/assets/css/rules.css" type="text/css">
 {% endblock %}
@@ -41,7 +46,7 @@
 </div>
 
 <article class="rules-column discord-rules">
-  <h3><img class="rules-heading-icon" src="/assets/img/social/discord-color.svg" alt="">{{ 'pages.rules.rules.discord' | i18n | lore | safe }}</h3>
+  <h3>{{ sectionTitle("/assets/img/social/discord-color.svg", 'pages.rules.rules.discord') }}</h3>
   <div class="content-box">
     <div class="subsection">
       <h4>{{ 'pages.rules.rules.sections.general' | i18n }}</h4>
@@ -55,7 +60,7 @@
 </article>
 
 <article class="rules-column minecraft-rules">
-  <h3><img class="rules-heading-icon" src="{{ rules.icons.minecraft }}" alt="">{{ 'pages.rules.rules.minecraft' | i18n | lore | safe }}</h3>
+  <h3>{{ sectionTitle(rules.icons.minecraft, 'pages.rules.rules.minecraft') }}</h3>
   <div class="content-box">
     <div class="subsection">
       <h4>{{ 'pages.rules.rules.sections.construction' | i18n }}</h4>
@@ -73,7 +78,7 @@
 </article>
 
 <article class="rules-column contrib-rules">
-  <h3><img class="rules-heading-icon" src="{{ rules.icons.contributions }}" alt="">{{ 'pages.rules.rules.contributions' | i18n | lore | safe }}</h3>
+  <h3>{{ sectionTitle(rules.icons.contributions, 'pages.rules.rules.contributions') }}</h3>
   <div class="content-box">
     {{ ruleList(rules.contributions, locale) }}
   </div>
@@ -88,7 +93,7 @@
   {{ 'pages.rules.ranks.info' | i18n | lore | safe }}
 </article>
 <article class="rules-column">
-  <h3>{{ 'pages.rules.ranks.players.title' | i18n | lore | safe }}</h3>
+  <h3>{{ 'pages.rules.ranks.players.title' | i18n }}</h3>
   <div class="content-box">
     <div class="subsection">
       {{ 'pages.rules.ranks.players.visitor' | i18n | lore | safe }}
