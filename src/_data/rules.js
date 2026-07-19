@@ -107,8 +107,8 @@ module.exports = {
     ],
     sensitiveAreas: [
       {
-         fr: "**🗼 Paris :** la construction dans la capitale suit un guide dédié, à consulter obligatoirement avant de construire, disponible sur Discord dans <#694003889506091100/1130172157868118198,construire-a-paris>.",
-         en: "**🗼 Paris:** building in the capital follows a dedicated guide, which you must read before starting, available on Discord in <#694003889506091100/1163819748920926258,Building in Paris>."
+         fr: "**🗼 Paris :** la construction dans la capitale suit un guide dédié, à consulter obligatoirement avant de construire, disponible sur Discord dans <#694003889506091100/1130172157868118198,Construire-a-Paris>.",
+         en: "**🗼 Paris:** building in the capital follows a dedicated guide, which you must read before starting, available on Discord in <#694003889506091100/1163819748920926258,Building-in-Paris>."
       },
       {
         fr: "**🇲🇨 Monaco :** toute construction en Principauté nécessite de contacter au préalable un membre du [Staff] dans le canal <#694003889506091100/694029532507668541,paca-monaco>.",
